@@ -1,0 +1,15 @@
+class Main {
+    int sumofdigits(int n)
+        {
+            if(n==0)
+            {
+                return 0;
+            }
+            return n%10 + sumofdigits(n/10);
+        }
+    public static void main(String[] args)
+    {
+        Main m = new Main();
+        System.out.println(m.sumofdigits(43));
+    }
+}
