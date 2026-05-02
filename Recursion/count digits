@@ -1,0 +1,15 @@
+class Main {
+    int countdigits(int n)
+        {
+            if(n==0)
+            {
+                return 0;
+            }
+            return 1 + countdigits(n/10);
+        }
+    public static void main(String[] args)
+    {
+        Main m = new Main();
+        System.out.println(m.countdigits(436323214));
+    }
+}
