@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+        boolean sorted(int a[] , int n , int i)
+        {
+            if(i>=n-1)
+            {
+                return true;
+            }
+            if(a[i]>a[i+1])
+            {
+                return false;
+            }
+            return sorted(a , n , i+1);
+        }
+    public static void main(String[] args) {
+        int a[] = {1,5,3};
+       Main m = new Main();
+       System.out.println(m.sorted(a , 3 , 0));
+    }
+}
