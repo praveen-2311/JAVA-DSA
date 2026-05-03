@@ -1,0 +1,23 @@
+class Main 
+{
+    void func(int n , int x)
+    {
+        if(n == 0)
+        {
+            return;
+        }
+         func(n-1,x);
+        if(x%n==0)
+        {
+            System.out.println(n);
+        }
+       
+        //System.out.println(n);
+    }
+    public static void main(String[] args)
+    {
+        int x = 20;
+        Main m = new Main();
+        m.func(x,x);
+    }
+}
