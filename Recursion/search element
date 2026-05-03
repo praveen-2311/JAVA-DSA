@@ -1,0 +1,27 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+        int sum(int a[] , int n , int i , int target)
+        {
+            if(i >= n)
+            {
+                //System.out.println("Element not found");
+                return -1;
+            }
+            if(a[i]==target)
+            {
+               // System.out.println("Find at index:"+i);
+                return i;
+            }
+            else
+            {
+               return sum(a , n , i+1 , target);
+            }
+        }
+    public static void main(String[] args) {
+        int a[] = {1,2,3,4,5};
+       Main m = new Main();
+       System.out.println(m.sum(a , 5 , 0 , 2));
+    }
+}
